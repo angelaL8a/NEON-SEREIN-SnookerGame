@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+* {
+  font-family: "Metal Mania", system-ui;
+}
+
+.page_bg {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+}
+
+.page_bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page_content {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.menu_title_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_title {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_title img {
+  width: 650px;
+}
+
+.button_menu {
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 40px;
+  width: 258.823px;
+  height: 94.117px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+.button_style {
+  border-radius: 16px;
+  border: 1px solid #fdb455;
+  background: radial-gradient(
+      238.39% 44.19% at 96.59% 31.25%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      182.56% 55.34% at 5.68% 100%,
+      rgba(246, 251, 34, 0.51) 0%,
+      rgba(255, 158, 69, 0) 100%
+    ),
+    radial-gradient(
+      137.51% 118.3% at 32.95% 0%,
+      rgba(255, 137, 137, 0.92) 21.25%,
+      rgba(255, 169, 106, 0.57) 88.62%
+    ),
+    radial-gradient(
+      178.09% 220.16% at 94.89% -132.81%,
+      #ff7a00 67.59%,
+      rgba(255, 199, 0, 0.38) 100%
+    ),
+    #fff500;
+  box-shadow: 0px 6px 0px 0px #d89553,
+    0px 0px 20px 0px rgba(255, 255, 255, 0.6) inset,
+    -20px -20px 50px 0px rgba(211, 70, 155, 0.4),
+    0px 20px 60px 0px rgba(232, 205, 110, 0.2),
+    0px 10px 60px 0px rgba(174, 113, 41, 0.8);
+}
+
+.game {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.game_title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  border-radius: 0px 0px 8px 8px;
+  background: linear-gradient(
+      91deg,
+      rgba(165, 224, 170, 0.2) 14.85%,
+      rgba(227, 54, 137, 0.2) 73.48%
+    ),
+    rgba(217, 217, 217, 0.17);
+  box-shadow: 0px 4px 4px 0px rgba(219, 90, 181, 0.33);
+}
+
+.game_title_container img {
+  width: 500px;
+}
+
+#canvas_container {
+  width: 900px;
+  height: 500px;
+}
+
+#canvas_container .p5Canvas {
+  border-radius: 1.5625rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.4) -8.95%,
+    rgba(255, 255, 255, 0.01) 114%
+  );
+
+  /* CompleteCanvasBack */
+  box-shadow: -4px -5px 17.6px 0px rgba(0, 0, 0, 0.25),
+    8px 10px 3.9px 0px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(50px);
+}
+
+.game_col {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto 0;
+}
+
+.game_mode_button {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 30px;
+}
+
+.game_color_table {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 100%;
+}
+
+/* specific for color*/
+.game_color_table_1 {
+  background-color: #178186;
+}
+
+.game_color_table_2 {
+  background-color: #db00c1;
+}
+
+.game_color_table_3 {
+  background-color: #ffac00;
+}
+
+.game_color_table_4 {
+  background-color: #84c08b;
+}
+
+.info {
+  padding-top: 100px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.info_container_left {
+  display: flex;
+  justify-content: start;
+}
+
+.info_container_right {
+  display: flex;
+  justify-content: end;
+}
+
+.info_box {
+  width: 46%;
+  border-radius: 1.5625rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.4) -8.95%,
+    rgba(255, 255, 255, 0.01) 114%
+  );
+  box-shadow: -4px -5px 17.6px 0px rgba(0, 0, 0, 0.25),
+    8px 10px 3.9px 0px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(50px);
+  padding: 30px;
+  color: white;
+  text-align: justify;
+}
+
+.alerts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -20px;
+
+  width: 500px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.4) -8.95%,
+    rgba(255, 255, 255, 0.01) 114%
+  );
+
+  mix-blend-mode: overlay;
+  backdrop-filter: blur(50px);
+  mix-blend-mode: overlay;
+
+  color: #fff;
+}

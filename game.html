@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>GP - Snooker Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="libraries/p5.min.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.min.js" type="text/javascript"></script>
+    <script src="libraries/matter.js" type="text/javascript"></script>
+
+    <script src="src/utils.js" type="text/javascript"></script>
+    <script src="src/main.js" type="text/javascript"></script>
+    <script src="src/snooker-table.js" type="text/javascript"></script>
+    <script src="src/ball.js" type="text/javascript"></script>
+    <script src="src/cue.js" type="text/javascript"></script>
+    <script src="src/speed-boost.js" type="text/javascript"></script>
+    <script src="src/events.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      canvas {
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page_bg">
+      <img src="Images/menu/back1980.png" alt="Background Image" />
+    </div>
+
+    <div class="page_content">
+      <div class="game_title_container">
+        <img src="Images/menu/title_game.png" alt="Game Title" />
+      </div>
+
+      <div class="game">
+        <div id="gameModeContainer" class="game_col"></div>
+        <div id="canvas_container"></div>
+        <div id="gameStyleTableContainer" class="game_col"></div>
+      </div>
+
+      <div id="alerts" class="alerts">Alerts</div>
+      <div id="info" class="info"></div>
+    </div>
+    <script src="src/script.js"></script>
+    <script src="src/dom-manipulation.js" type="text/javascript"></script>
+  </body>
+</html>
